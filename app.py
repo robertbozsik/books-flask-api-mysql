@@ -38,7 +38,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home_page_view():
-    return "<h3>This is a simple REST API connected to a free SQL database.</h3> \n<p>At route '/books' you can get all the books in the database (GET) or create a new book (POST).</p> \n<p>At route '/book/id' you can get a book by its id (GET), update an existing book (PUT) or delete one (DELETE).</p>"
+    return "<h3>This is a simple REST API connected a local MySQL database.</h3> \n<p>At route '/books' you can get all the books in the database (GET) or create a new book (POST).</p> \n<p>At route '/book/id' you can get a book by its id (GET), update an existing book (PUT) or delete one (DELETE).</p>"
 
 
 @app.route('/books', methods=['GET', 'POST'])

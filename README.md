@@ -1,6 +1,6 @@
 # books-flask-api-mysql
 
-a simple Flask API connected to a local MySQL database
+a simple REST API made with Flask and connected to a local MySQL database
 
 # quick start
 
