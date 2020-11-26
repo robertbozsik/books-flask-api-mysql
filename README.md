@@ -13,4 +13,4 @@ a simple REST API made with Flask and connected to a local MySQL database
 7. run the command python3 app.py in your terminal to start the app
 8. make a post request with Postman (add and 'author', a 'language', and a 'title' of a book) at http://127.0.0.1:5002/books
 9. try out a GET request with your browser or Postman at http://127.0.0.1:5002/books
-10. try out GET, PUT or DELETE requests with Postman at http://127.0.0.1:5002/book/"id_of_a_book_you_created"
+10. try out GET, PUT or DELETE requests with Postman at http://127.0.0.1:5002/book/id_of_a_book_you_created
