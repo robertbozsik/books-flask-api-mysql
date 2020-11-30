@@ -49,14 +49,15 @@ def books_view():
     # GET: to read/get all the books
     if request.method == 'GET':
         cursor.execute('SELECT * FROM books')
-        books = [dict(id=row['id'], author=row['author'],
-                      language=row['language']) for row in cursor.fetchall()]
+        books = [dict(id=row['id'], author=row['author'], language=row['language'],
+                      title=row['title']) for row in cursor.fetchall()]
         if books:
             return jsonify(books), 200
         else:
             return 'There are no books in the table yet.', 404
 
     # POST: to create a new book
+    # to test it with Postman: POST / Body / form-data
     if request.method == 'POST':
         # iD is added to the table automatically
         new_author = request.form['author']
